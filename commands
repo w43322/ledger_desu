@@ -1,0 +1,32 @@
+下载
+wget https://dist.ipfs.io/kubo/v0.14.0/kubo_v0.14.0_linux-amd64.tar.gz
+解压
+tar xvfz kubo_v0.14.0_linux-amd64.tar.gz
+安装
+cd kubo
+./install.sh
+初始化
+ipfs  init
+查看初始化后返回的节点信息
+ipfs cat /ipfs/QmQPeNsJPyVWPFDVHb77w8G42Fvo15z4bG2X8D2GhfbSXc/readme
+配置ipfs跨域
+ipfs config --json API.HTTPHeaders.Access-Control-Allow-Methods '["PUT","GET", "POST", "OPTIONS"]'
+ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["*"]'
+ipfs config --json API.HTTPHeaders.Access-Control-Allow-Credentials '["true"]'
+ipfs config --json API.HTTPHeaders.Access-Control-Allow-Headers '["Authorization"]'
+ipfs config --json API.HTTPHeaders.Access-Control-Expose-Headers '["Location"]'
+配置IPFS外网访问控制台
+cd ~/.ipfs
+vi config
+把127.0.0.1修改成0.0.0.0
+
+IPFS端口说明
+4001 主要端口，进行p2p连接和同步数据
+5001 ipfs的api端口，管理页面的端口，可以进行数据的读写
+8080 ipfs gateway端口，用于读取ipfs节点数据，默认只读
+如果使用防火墙，记得把这几个端口开放，否则外网还是无法访问
+启动IPFS
+nohup  ipfs daemon  >> ./log/nohup`date +%Y-%m-%d`.out 2>&1 &
+查看连接节点
+ipfs swarm peers
+浏览器访问 http://localhost:5001/webui （管理页面，文件上传等）会重定向到自己节点
