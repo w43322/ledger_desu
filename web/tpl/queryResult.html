@@ -23,8 +23,8 @@
                         <td>身份证号</td>
                         <td>学校名称</td>
                         <td>入学日期</td>
-                        <td>毕(结)业日期</td>
-                        <td>专业</td>
+                        <td>坐标经度</td>
+                        <td>坐标纬度</td>
                         <td>层次</td>
                     </tr>
                     {{range .Edu.Historys}}
@@ -73,7 +73,7 @@
                       <span>{{.Edu.Level}}</span>
                   </p>
                   <p>
-                      <span>毕(结)业：</span>
+                      <span>坐标经度：</span>
                       <span>{{.Edu.Graduation}}</span>
                   </p>
               </div>
@@ -91,11 +91,11 @@
                       <span>{{.Edu.EntityID}}</span>
                   </p>
                   <p>
-                      <span>毕(结)业日期：</span>
+                      <span>坐标经度：</span>
                       <span>{{.Edu.GraduationDate}}</span>
                   </p>
                   <p>
-                      <span>专业：</span>
+                      <span>坐标纬度：</span>
                       <span>{{.Edu.Major}}</span>
                   </p>
 
