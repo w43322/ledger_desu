@@ -12,19 +12,19 @@ import (
 type Education struct {
 	ObjectType     string `json:"docType"`
 	Name           string `json:"Name"`           // 记录人
-	Gender         string `json:"Gender"`         // 性别
-	Nation         string `json:"Nation"`         // 民族
+	Gender         string `json:"Gender"`         // 街道名称
+	Nation         string `json:"Nation"`         // 具体位置
 	EntityID       string `json:"EntityID"`       // 记录ID号
-	Place          string `json:"Place"`          // 籍贯
-	BirthDay       string `json:"BirthDay"`       // 出生日期
-	EnrollDate     string `json:"EnrollDate"`     // 入学日期
+	Place          string `json:"Place"`          // 楼号
+	BirthDay       string `json:"BirthDay"`       // 记录日期
+	EnrollDate     string `json:"EnrollDate"`     // 记录时间
 	GraduationDate string `json:"GraduationDate"` // 毕（结）业日期
 	SchoolName     string `json:"SchoolName"`     // 小区名称
 	Major          string `json:"Major"`          // 坐标纬度
-	QuaType        string `json:"QuaType"`        // 学历类别
-	Length         string `json:"Length"`         // 学制
-	Mode           string `json:"Mode"`           // 学习形式
-	Level          string `json:"Level"`          // 层次
+	QuaType        string `json:"QuaType"`        // 记录内容
+	Length         string `json:"Length"`         // 备注
+	Mode           string `json:"Mode"`           // 记录形式
+	Level          string `json:"Level"`          // 记录类型
 	Graduation     string `json:"Graduation"`     // 毕（结）业
 	CertNo         string `json:"CertNo"`         // 记录流水号
 

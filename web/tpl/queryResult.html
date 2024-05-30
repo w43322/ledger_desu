@@ -19,13 +19,13 @@
                 <table id="table" style="margin: 0 auto;">
                     <tr>
                         <td>记录人</td>
-                        <td>出生日期</td>
+                        <td>记录日期</td>
                         <td>记录ID号</td>
                         <td>小区名称</td>
-                        <td>入学日期</td>
+                        <td>记录时间</td>
                         <td>坐标经度</td>
                         <td>坐标纬度</td>
-                        <td>层次</td>
+                        <td>记录类型</td>
                     </tr>
                     {{range .Edu.Historys}}
                         <tr>
@@ -49,15 +49,15 @@
                       <span>{{.Edu.Name}}</span>
                   </p>
                   <p>
-                      <span>籍贯：</span>
+                      <span>楼号：</span>
                       <span>{{.Edu.Place}}</span>
                   </p>
                   <p>
-                      <span>民族：</span>
+                      <span>具体位置：</span>
                       <span>{{.Edu.Nation}}</span>
                   </p>
                   <p>
-                      <span>入学日期：</span>
+                      <span>记录时间：</span>
                       <span>{{.Edu.EnrollDate}}</span>
                   </p>
                   <p>
@@ -65,11 +65,11 @@
                       <span>{{.Edu.SchoolName}}</span>
                   </p>
                   <p>
-                      <span>学历类别：</span>
+                      <span>记录内容：</span>
                       <span>{{.Edu.QuaType}}</span>
                   </p>
                   <p>
-                      <span>层次：</span>
+                      <span>记录类型：</span>
                       <span>{{.Edu.Level}}</span>
                   </p>
                   <p>
@@ -79,11 +79,11 @@
               </div>
               <div class="right">
                   <p>
-                      <span>性别：</span>
+                      <span>街道名称：</span>
                       <span>{{.Edu.Gender}}</span>
                   </p>
                   <p>
-                      <span>出生日期：</span>
+                      <span>记录日期：</span>
                       <span>{{.Edu.BirthDay}}</span>
                   </p>
                   <p>
@@ -100,11 +100,11 @@
                   </p>
 
                   <p>
-                      <span>学习形式：</span>
+                      <span>记录形式：</span>
                       <span>{{.Edu.Mode}}</span>
                   </p>
                   <p>
-                      <span>学制：</span>
+                      <span>备注：</span>
                       <span>{{.Edu.Length}}</span>
                   </p>
                   <p>
