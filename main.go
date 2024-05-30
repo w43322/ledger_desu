@@ -102,7 +102,7 @@ func main() {
 		var edu service.Education
 		json.Unmarshal(result, &edu)
 		fmt.Println("根据记录ID号码查询信息成功：")
-		fmt.Println(edu)
+		//fmt.Println(edu)
 	}
 
 	app := controller.Application{
