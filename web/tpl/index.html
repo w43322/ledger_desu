@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
-    <title>基于区块链技术实现的存证记录征信系统</title>
+    <title>基于区块链技术实现的存证记录系统</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="/static/css/reset.css" rel="stylesheet">
     <!-- Bootstrap3.3.5 CSS -->
@@ -12,57 +12,56 @@
   </head>
   <body>
     <div class="h_m_l main">
-        <h2>基于区块链技术实现的存证记录征信系统</h2>
+        <h2>基于区块链技术实现的存证记录系统</h2>
         <div class="h_m_div3">
             <div class="h_m_div3_t">
-                <h3 class="i01"><a href="/help">查询范围</a></h3>
-                可查询国家承认的社区巡检巡查学籍存证记录。 </div>
+                <h3 class="i01"><a href="/help">巡检巡查记录</a></h3>
+                可新建或修改巡检巡查记录，更新链上数据。 </div>
             <ul class="h_m_div3_ul clearfix">
-                <li><span class="fontBold color333">学籍查询</span><br>
-                    <a href="javascript:void(0);">新生学籍</a><br>
-                    <a href="javascript:void(0);">在校生学籍</a><br>
-                    <a href="javascript:void(0);">图像校对</a></li>
-                <li><span class="fontBold color333">学历查询</span><br>
-                    <a href="javascript:void(0);">本人查询</a><br>
-                    <a href="javascript:void(0);">零散查询</a><br>
-                    <a href="javascript:void(0);">会员查询</a><br><br>
+                <li><span class="fontBold color333">新建记录</span><br>
+                    <a href="/addEduInfo">日常巡检</a><br>
+                    <a href="javascript:void(0);">定点巡检</a><br>
+                    <a href="javascript:void(0);">异常上报</a><br><br></li>
+                <li><span class="fontBold color333">修改删除</span><br>
+                    <a href="/modifyPage">修改记录</a><br>
+                    <a href="javascript:void(0);">软删除记录</a><br>
             </li></ul>
-            <div class="h_m_div3_b"><a href="javascript:void(0);">学籍查询</a>　|　<a href="javascript:void(0);">学历查询</a></div>
+            <div class="h_m_div3_b"><a href="javascript:void(0);">权限申请</a>　|　<a href="javascript:void(0);">学历查询</a></div>
         </div>
         <div class="h_m_div3">
             <div class="h_m_div3_t">
-                <h3 class="i02"><a href="/queryPage">在线验证</a></h3>
-                在线快捷申请、验证。在学籍学历查询基础上，提供便捷的在线验证服务。</div>
+                <h3 class="i02"><a href="/queryPage">历史记录查询</a></h3>
+                可通过两种方式查询链上巡检巡查记录。</div>
             <ul class="h_m_div3_ul clearfix">
-                <li><span class="fontBold color333">根据记录流水号查询</span><br>
-                    <a href="/queryPage">查询信息</a><br>
+                <li><span class="fontBold color333">根据记录流水号、<br>记录人</span><br>
+                    <a href="/queryPage">查询链上记录</a><br>
                     &nbsp; <br>
                     &nbsp; <br>
                     &nbsp; </li>
-                <li><span class="fontBold color333">根据记录ID号查询</span><br>
-                    <a href="/queryPage2">查询信息</a></li>
+                <li><span class="fontBold color333">根据ID号</span><br>
+                    <a href="/queryPage2">查询链上记录</a></li>
                 <div class="logo">
                 </div>
             </ul>
-            <div class="h_m_div3_b"><a href="javascript:void(0);">报告介绍</a>　|　<a href="javascript:void(0);">特点</a>　|　<a  href="javascript:void(0);">如何申请</a></div>
+            <div class="h_m_div3_b"><a href="javascript:void(0);">修改历史</a>　|　<a  href="javascript:void(0);">查询历史</a></div>
         </div>
         <div class="h_m_div3 h_m_div3_nob">
             <div class="h_m_div3_t">
-                <h3 class="i03"><a href="javascript:void(0);">学历与成绩认证</a></h3>
-                开展社区巡检巡查学历认证服务工作的专门机构。 </div>
+                <h3 class="i03"><a href="javascript:void(0);">系统管理</a></h3>
+                进行系统信息管理，可查看链上数据、查看智能合约状态等。 </div>
             <ul class="h_m_div3_ul clearfix">
-                <li><span class="fontBold color333">学历认证报告</span><br>
-                    <a href="javascript:void(0);">社区巡检巡查学历</a><br>
-                    <a href="javascript:void(0);">中等教育学历</a><br>
+                <li><span class="fontBold color333">状态查看</span><br>
+                    <a href="http://127.0.0.1:8080">查看org1网络状态</a><br>
+                    <a href="http://127.0.0.1:5984/_utils">查看peer1节点状态</a><br>
+                    <a href="http://127.0.0.1:7984/_utils">查看peer2节点状态</a><br>
+                    <a href="http://127.0.0.1:5001/webui">查看IPFS状态</a></li>
+                <li><span class="fontBold color333">用户管理</span><br>
+                    <a href="javascript:void(0);">新建用户</a><br>
+                    <a href="javascript:void(0);">权限管理</a><br>
                     &nbsp; <br>
                     &nbsp; </li>
-                <li><span class="fontBold color333">成绩验证报告</span><br>
-                    <a href="javascript:void(0);">高校在校成绩</a><br>
-                    <a href="javascript:void(0);">高考成绩</a><br>
-                    <a href="javascript:void(0);">中学成绩单</a><br>
-                    <a href="javascript:void(0);">会考成绩单</a></li>
             </ul>
-            <div class="h_m_div3_b"><a  href="javascript:void(0);">代理机构</a>　|　<a href="javascript:void(0);">如何申请</a></div>
+            <div class="h_m_div3_b"><a  href="javascript:void(0);">联系管理员</a>　|　<a href="/louginOut">登出</a></div>
         </div>
     </div>
   </body>
